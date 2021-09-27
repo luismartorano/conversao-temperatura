@@ -23,26 +23,22 @@ CMD [ "node", "server.js" ]
 ### Imagem personalizada
 ```
 docker image build . -t luismartorano/conversaotemperatura:2.0
-
 ```
 ### Executando o container docker na porta 49160
 ```
-docker container run -p 49160:8080 -d luismartorano/conversaotemperatura:1.0
+docker container run -p 49160:8080 -d luismartorano/conversaotemperatura:2.0
 ```
 
 ### Verificando processo
 ```
 docker container ps
-
 ```
 ### Executando programa
 ```
 localhost:49160
-
 ```
 ### Destruindo o container
 
 ```
 docker container rm -f <nome do container>
-
 ```
