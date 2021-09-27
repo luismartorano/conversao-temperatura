@@ -1,4 +1,4 @@
-# Iniciativa Kubernetes - Aula 1 - Desafio: App node
+# Iniciativa Kubernetes - Aula 1 - DOCKER - Desafio: App node
 
 
 ### Dockerfile criado - imagem Node 14
