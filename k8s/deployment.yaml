@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: conversaotemperatura
 spec:
-   replicas: 6
+   replicas: 3
    selector:
      matchLabels:
        app: conversaotemperatura
@@ -26,9 +26,10 @@ spec:
   selector: 
     app: conversaotemperatura
   ports:
-    - port: 8080
+    - port: 80
+      targetPort: 8080
       protocol: TCP
       name: http
-      nodePort: 30000
-  type: NodePort
+      #nodePort: 30000
+  type: LoadBalancer
 
