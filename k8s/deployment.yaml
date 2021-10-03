@@ -14,7 +14,7 @@ spec:
      spec:
        containers:
          - name: conversaotemperatura
-           image: luismartorano/conversaotemperatura:latest
+           image: luismartorano/conversao-temperatura:latest
            ports:
              - containerPort: 8000
 ---
@@ -26,12 +26,8 @@ spec:
   selector: 
     app: conversaotemperatura
   ports:
-<<<<<<< HEAD
-    - port: 8080 #mesma porta q está em cluster.yaml
-=======
-    - port: 80
-      targetPort: 8080
->>>>>>> 3c2965ffb63fc59c5d3b549888cfb9a2cc5c4ce6
+    - port: 80 
+      targetPort: 8000
       protocol: TCP
       name: http
       #nodePort: 30000
